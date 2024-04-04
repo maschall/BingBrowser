@@ -21,5 +21,4 @@ The parsing of the response from Bing, is less than ideal, and so is the format.
 
 If in the future we want to expand to add more search providers like Google and DuckDuckGo, we could abstract the suggestions and web view classes to swap in and out different results without repeating the search logic.
 
-It's most likely we will want a more custom looking search bar.  It would probably make more sense to implement our own version of a UISearchController with custom views for UISearchBar, however to not spend too much time in this project, we can use some of the built in functionality.
-
+It's most likely we will want a more custom looking search bar.  It would probably make more sense to implement our own version of a UISearchController with custom views for UISearchBar, however to not spend too much time in this project, we can use some of the built in functionality.  Additionally, the means of canceling the last search suggestions while someone might be typing, is not as ideal than a traditional debouncing, since the network call may still be made and take up resources.
