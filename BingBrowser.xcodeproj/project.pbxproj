@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D5D4F512BBEF92F00A2CC30 /* BingWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D4F502BBEF92F00A2CC30 /* BingWebView.swift */; };
+		4D5D4F532BBF1F6000A2CC30 /* BingSearchSuggestionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D4F522BBF1F6000A2CC30 /* BingSearchSuggestionsProvider.swift */; };
 		4D87B5A12BBD9B5900141AC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87B5A02BBD9B5900141AC8 /* AppDelegate.swift */; };
 		4D87B5A32BBD9B5900141AC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87B5A22BBD9B5900141AC8 /* SceneDelegate.swift */; };
-		4D87B5A52BBD9B5900141AC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87B5A42BBD9B5900141AC8 /* ViewController.swift */; };
-		4D87B5A82BBD9B5900141AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D87B5A62BBD9B5900141AC8 /* Main.storyboard */; };
 		4D87B5AA2BBD9B5A00141AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D87B5A92BBD9B5A00141AC8 /* Assets.xcassets */; };
 		4D87B5AD2BBD9B5A00141AC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D87B5AB2BBD9B5A00141AC8 /* LaunchScreen.storyboard */; };
+		4D87B5B92BBDA06C00141AC8 /* BingSearchWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87B5B82BBDA06C00141AC8 /* BingSearchWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D5D4F502BBEF92F00A2CC30 /* BingWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingWebView.swift; sourceTree = "<group>"; };
+		4D5D4F522BBF1F6000A2CC30 /* BingSearchSuggestionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingSearchSuggestionsProvider.swift; sourceTree = "<group>"; };
 		4D87B59D2BBD9B5900141AC8 /* BingBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D87B5A02BBD9B5900141AC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D87B5A22BBD9B5900141AC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D87B5A42BBD9B5900141AC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D87B5A72BBD9B5900141AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D87B5A92BBD9B5A00141AC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D87B5AC2BBD9B5A00141AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D87B5AE2BBD9B5A00141AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D87B5B82BBDA06C00141AC8 /* BingSearchWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingSearchWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		4D87B59F2BBD9B5900141AC8 /* BingBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				4D87B5A02BBD9B5900141AC8 /* AppDelegate.swift */,
-				4D87B5A22BBD9B5900141AC8 /* SceneDelegate.swift */,
-				4D87B5A42BBD9B5900141AC8 /* ViewController.swift */,
-				4D87B5A62BBD9B5900141AC8 /* Main.storyboard */,
+				4D87B5B52BBD9F9100141AC8 /* Search */,
+				4D87B5B42BBD9F6B00141AC8 /* Application */,
 				4D87B5A92BBD9B5A00141AC8 /* Assets.xcassets */,
-				4D87B5AB2BBD9B5A00141AC8 /* LaunchScreen.storyboard */,
-				4D87B5AE2BBD9B5A00141AC8 /* Info.plist */,
 			);
 			path = BingBrowser;
+			sourceTree = "<group>";
+		};
+		4D87B5B42BBD9F6B00141AC8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4D87B5AB2BBD9B5A00141AC8 /* LaunchScreen.storyboard */,
+				4D87B5A02BBD9B5900141AC8 /* AppDelegate.swift */,
+				4D87B5A22BBD9B5900141AC8 /* SceneDelegate.swift */,
+				4D87B5AE2BBD9B5A00141AC8 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4D87B5B52BBD9F9100141AC8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4D87B5B82BBDA06C00141AC8 /* BingSearchWebViewController.swift */,
+				4D5D4F502BBEF92F00A2CC30 /* BingWebView.swift */,
+				4D5D4F522BBF1F6000A2CC30 /* BingSearchSuggestionsProvider.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +146,6 @@
 			files = (
 				4D87B5AD2BBD9B5A00141AC8 /* LaunchScreen.storyboard in Resources */,
 				4D87B5AA2BBD9B5A00141AC8 /* Assets.xcassets in Resources */,
-				4D87B5A82BBD9B5900141AC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D87B5A52BBD9B5900141AC8 /* ViewController.swift in Sources */,
+				4D87B5B92BBDA06C00141AC8 /* BingSearchWebViewController.swift in Sources */,
+				4D5D4F512BBEF92F00A2CC30 /* BingWebView.swift in Sources */,
 				4D87B5A12BBD9B5900141AC8 /* AppDelegate.swift in Sources */,
+				4D5D4F532BBF1F6000A2CC30 /* BingSearchSuggestionsProvider.swift in Sources */,
 				4D87B5A32BBD9B5900141AC8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D87B5A62BBD9B5900141AC8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D87B5A72BBD9B5900141AC8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D87B5AB2BBD9B5A00141AC8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,13 +302,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BingBrowser/Info.plist;
+				INFOPLIST_FILE = BingBrowser/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +319,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maschall.BingBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,13 +331,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BingBrowser/Info.plist;
+				INFOPLIST_FILE = BingBrowser/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +348,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maschall.BingBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
